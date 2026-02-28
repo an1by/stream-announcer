@@ -33,7 +33,7 @@ Automatically posts Twitch stream go-live announcements to a Telegram channel. W
    - `TELEGRAM_BOT_TOKEN` — from [@BotFather](https://t.me/BotFather)
    - `TELEGRAM_CHANNEL_ID` — your channel ID (e.g. `-1002067254966`)
 
-   Optional: customize `MESSAGE_FORMAT`, `FALLBACK_MESSAGE_FORMAT`, and `AI_TITLE_PROMPT` (see `.env.example`).
+   Optional: customize `MESSAGE_FORMAT`, and `AI_TITLE_PROMPT` (see `.env.example`).
 
 3. **First run (Twitch auth)**
 
@@ -59,8 +59,7 @@ bun src/index.ts
 
 - **Placeholders:** `{stream_title}`, `{stream_game}`, `{username}`, `{user_id}`, `{ai_generated_title}`
 - **MESSAGE_FORMAT** — used when AI title is available.
-- **FALLBACK_MESSAGE_FORMAT** — used when AI fails or is disabled (e.g. `{stream_title}\nhttps://twitch.tv/{username}`).
 
 ## License
 
-Private project.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — [An1by](https://github.com/an1by)
